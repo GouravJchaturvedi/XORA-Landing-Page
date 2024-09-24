@@ -1,5 +1,6 @@
 import React from 'react'
-import { Element } from 'react-scroll'
+import { Element  , Link as LinkScroll} from 'react-scroll'
+import Button from '../components/Button'
 
 function Hero() {
   return (
@@ -16,6 +17,9 @@ function Hero() {
                     <p className='max-w-440 mb-40 body-1 max-md:mb-10'>
                         We designed XORA AI video editor to be an easy to use, quick to learn, and surprisingly powerful.
                     </p>
+                    <LinkScroll to='features' offset={-100} spy smooth>
+                        <Button/>
+                    </LinkScroll>
                 </div>
             </div>
         </Element>
